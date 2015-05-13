@@ -39,7 +39,6 @@ public class No09_Kaup {
 	public double getWeight() {
 		return weight;
 	}
-
 	
 	public void setWeight(double weight) {
 		System.out.println("무게->");
@@ -63,7 +62,6 @@ public class No09_Kaup {
 		return "카우프지수 [키=" + getHeight() + "cm, 몸무게=" + getWeight()
 				+ "kg, 카우프지수=" + idx + "%, 영양상태="+getMsg()+"]";
 	}
-	
 	
 	private void outPut() {
 		System.out.println(toString());

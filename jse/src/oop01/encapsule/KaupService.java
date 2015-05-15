@@ -1,4 +1,4 @@
-package oop01.game;
+package oop01.encapsule;
 
 import java.util.ArrayList;
 import java.util.HashSet;

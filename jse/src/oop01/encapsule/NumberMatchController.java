@@ -1,4 +1,4 @@
-package oop01.game;
+package oop01.encapsule;
 
 import java.util.Scanner;
 
@@ -6,7 +6,7 @@ public class NumberMatchController {
 	
 	public static void main(String[] args) {
 			
-		NumberMatchService sevice = new NumberMatchService();
+		NumberMatchService service = new NumberMatchService();
 		Scanner scanner= new Scanner(System.in);
 		System.out.println("총 3회 시도 가능");
 		int a= 0;
@@ -15,11 +15,9 @@ public class NumberMatchController {
 				break;
 			}else{
 				int input= scanner.nextInt();
-				sevice.setInput(input);
-				a=sevice.GameControl();
+				service.setInput(input);
+				a=service.GameControl();
 			}
 		}
-		
-		
 	}
 }

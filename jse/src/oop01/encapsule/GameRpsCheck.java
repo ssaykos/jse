@@ -13,4 +13,14 @@ public class GameRpsCheck {
 		return condition;
 	}
 
+	public boolean qustionCheck(int qustionContinue) {
+		boolean condition=true;
+		if(qustionContinue>=1&&qustionContinue<=2){
+			condition=false;
+		}else{
+			condition=true;
+		}
+		return condition;
+	}
+
 }

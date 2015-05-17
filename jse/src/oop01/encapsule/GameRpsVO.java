@@ -42,7 +42,7 @@ public class GameRpsVO {
 	}
 	
 	public void setGameCount(int gameCount) {
-		GameCount += gameCount;
+		this.GameCount = gameCount;
 	}
 	
 	public int getVictoryCount() {
@@ -50,7 +50,7 @@ public class GameRpsVO {
 	}
 	
 	public void setVictoryCount(int victoryCount) {
-		this.victoryCount += victoryCount;
+		this.victoryCount = victoryCount;
 	}
 	
 	public int getLoseCount() {
@@ -58,7 +58,7 @@ public class GameRpsVO {
 	}
 	
 	public void setLoseCount(int loseCount) {
-		this.loseCount += loseCount;
+		this.loseCount = loseCount;
 	}
 	
 	public int getDrawCount() {
@@ -66,7 +66,7 @@ public class GameRpsVO {
 	}
 	
 	public void setDrawCount(int drawCount) {
-		this.drawCount += drawCount;
+		this.drawCount = drawCount;
 	}
 	
 }

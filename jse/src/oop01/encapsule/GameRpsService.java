@@ -1,15 +1,12 @@
 package oop01.encapsule;
 
 import java.util.Random;
-import java.util.Scanner;
-
 /*
 	Date:2015.05.15
 	Auther : 김진선
 	
 */
 public class GameRpsService {
-	GameRpsVO vo = new GameRpsVO();
 	/*
 	 	사용자 의 입력값을 컨트롤러에서 가져와 체크후
 	 	숫자값에 따른 가위 바위 보 결정 로직
@@ -23,9 +20,10 @@ public class GameRpsService {
 	}
 
 	public void gameProcess(int playerValue) {
+		GameRpsVO vo = new GameRpsVO();
 		GameRpsValueController vc = new GameRpsValueController();
 		Random random = new Random();
-		int comValue = random.nextInt(3);
+		int comValue = random.nextInt(3)+1;
 		
 		int result = playerValue - comValue+3;
 		
@@ -82,21 +80,21 @@ public class GameRpsService {
 		switch (result) {
 		case 1:
 		case 4:
-			vo.setGameCount(1);
-			vo.setVictoryCount(1);
+			vo.setGameCount(vo.getGameCount()+1);
+			vo.setVictoryCount(vo.getVictoryCount()+1);
 			System.out.println("유저->"+vc.rpsChangeNumber(playerValue)+"vs"+vc.rpsChangeNumber(comValue)+"<-컴퓨터");
 			System.out.println("당신이 이겼습니다.");
 			break;
 		case 2:
 		case 5:
-			vo.setGameCount(1);
-			vo.setLoseCount(1);
+			vo.setGameCount(vo.getGameCount()+1);
+			vo.setLoseCount(vo.getLoseCount()+1);
 			System.out.println("유저->"+vc.rpsChangeNumber(playerValue)+"vs"+vc.rpsChangeNumber(comValue)+"<-컴퓨터");
 			System.out.println("당신이 졌습니다.");
 			break;
 		case 3:
-			vo.setGameCount(1);
-			vo.setDrawCount(1);
+			vo.setGameCount(vo.getGameCount()+1);
+			vo.setDrawCount(vo.getDrawCount()+1);
 			System.out.println("비기셨습니다.");
 			System.out.println("유저->"+vc.rpsChangeNumber(playerValue)+"vs"+vc.rpsChangeNumber(comValue)+"<-컴퓨터");
 			break;
@@ -104,7 +102,7 @@ public class GameRpsService {
 	}
 
 	public void viewWinningRate() {
-	
+		GameRpsVO vo = new GameRpsVO();
 		System.out.println("총 게임 실행 횟수->"+vo.getGameCount());
 		System.out.println("게임 중 이긴 횟수-> "+vo.getVictoryCount());
 		System.out.println("게임 중 진 횟수-> "+vo.getLoseCount());

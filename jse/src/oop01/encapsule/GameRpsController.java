@@ -11,10 +11,9 @@ public class GameRpsController {
 	public static void main(String[] args) {
 		System.out.println("가위바위보 게임을 시작합니다.");
 		Scanner scanner= new Scanner(System.in);
-		
+		GameRpsService service = new GameRpsService();
 		boolean flag = true;
 		while(flag){
-			GameRpsService service = new GameRpsService();
 			System.out.print("가위:1 바위:2 보:3 를 입력->");
 			int playerValue= scanner.nextInt();
 			boolean checkCondition=true;

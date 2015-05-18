@@ -35,7 +35,7 @@ public class GameRpsVO {
 //	데이터 베이스에는 가위바위보에 대한 값이 아닌 
 //	접속한 유저의 게임 카운트와 게임 승수 패수 승률 등이 입력되야 맞는것 같다.
 	private static int GameCount=0,victoryCount=0,loseCount=0,drawCount=0;
-	//이곳값을 스태틱으로 하지 않으면 카운트 들이 모두 초기화 되서..어쩔수 없이 스태틱으로 둿다...= ㅅ =;;망한소스다..ㅠ_ ㅠ흐거덩 ㅠㅠ;;
+//이곳값을 스태틱으로 하지 않으면 카운트 들이 모두 초기화 되서..어쩔수 없이 스태틱으로 둿다...= ㅅ =;;망한소스다..ㅠ_ ㅠ흐거덩 ㅠㅠ;;
 	
 	public int getGameCount() {
 		return GameCount;

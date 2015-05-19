@@ -1,13 +1,13 @@
 package oop01.syntax;
 
-public class Bycycle {
+public class tutorialBycycle {
 	private int cadence;
 	private int gear;
 	private int speed;
 	private int id;
 	private static int numberOfBicycle=0;
 
-	public Bycycle(int stratCadence, int stratGear, int stratSpeed) {
+	public tutorialBycycle(int stratCadence, int stratGear, int stratSpeed) {
 		super();
 		this.cadence = stratCadence;
 		this.gear = stratGear;

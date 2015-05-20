@@ -1,4 +1,4 @@
-package oop01.syntax;
+package oop02.syntax;
 /*
 	메소드의 값을 전달하는 방법
 	- Call by Value

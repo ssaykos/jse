@@ -1,4 +1,4 @@
-package oop01.syntax;
+package oop02.syntax;
 /*
 	상수 선언
 	상수는 프로그램이 실행되는 동안 (선언과 동시에 값을 설정했다면) 

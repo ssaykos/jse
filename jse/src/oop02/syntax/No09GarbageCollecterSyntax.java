@@ -1,4 +1,4 @@
-package oop01.syntax;
+package oop02.syntax;
 /*
 	GarbageCollecting 가비지 컬랙팅
 	- 자바 가상기계 (jvm) 자동으로 수정함

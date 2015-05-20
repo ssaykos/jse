@@ -1,4 +1,4 @@
-package oop01.syntax;
+package oop02.syntax;
 /*
 	static 변수
 	- 정리변수

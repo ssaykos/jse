@@ -1,4 +1,4 @@
-package oop01.syntax;
+package oop02.syntax;
 /*
 	맴버변수에 관한 자바 듀토리얼 내용
 	

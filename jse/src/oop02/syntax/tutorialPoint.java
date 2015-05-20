@@ -1,4 +1,4 @@
-package oop01.syntax;
+package oop02.syntax;
 
 
 public class tutorialPoint {

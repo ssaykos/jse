@@ -1,4 +1,4 @@
-package oop01.syntax;
+package oop02.syntax;
 /*
 	생성자는 인스턴스가 생성될때의 호출되는 " 인스턴스 초기화 메서드" 이다.
  */

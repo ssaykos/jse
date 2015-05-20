@@ -23,5 +23,5 @@ package oop03.inheritance;
  	 자바에서 인터페이스 상속 : implements
  */
 public class InherintanceSyntax {
-	
+	 
 }
